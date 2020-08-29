@@ -1,0 +1,133 @@
+@import 'variables';
+@import 'utility';
+
+*{
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    outline: none;
+}
+
+ul{
+    list-style: none;
+    li{ 
+        display: inline;
+        padding: 0 1rem;
+        a{
+            font-size: 1.2rem;
+            color:#fff;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid transparent;
+            transition: border-bottom-color 1s;
+            &:hover {
+                border-bottom-color: $main-color;
+            }
+        }
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+#header{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url($bg-cover) no-repeat center center/cover;
+    height: 100vh;
+    background-color:#ddd;
+    .main-navigation{
+        display: flex;
+        justify-content: space-between;
+        height: 6rem;
+        align-items: center;
+        .logo-img{
+            flex: 2;
+            img{
+                width: 150px;
+            }
+        }
+    }
+    .header-content{
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        line-height: 2;
+        h1{
+            font-size: 4rem;
+        }
+        button{
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+//section about us
+#section {
+    &-a {
+        text-align: center;
+        .about-info {
+            display: flex;
+            justify-content: space-around;
+            &-content {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                
+                .fas {
+                    color: $main-color;
+                    cursor: pointer;
+                    transition: 1s;
+                    &:hover {
+                        transform: scale(1.5)
+                    }
+                }
+                div {
+                    margin-top: 0.75rem;
+                }
+               
+            }
+        }
+    }
+    &-b {
+        text-align: center;
+        
+        .client-info{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+    &-c{
+        text-align: center; 
+        .ceo-info{
+           display: flex;
+           justify-content: center;
+           margin-top: 1rem;
+           &-image {
+             width: 50%;
+               img {
+                display: block;
+                width: 100%;
+               }
+           }
+           .ceo-description {
+               border-left: 1px solid $main-color;
+           }
+          
+        }
+    }
+    &-d{
+        text-align: center;
+        .contact-details{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+    &-e{
+        height: 4rem;
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,17 @@
+
+$browser-width:1200px;
+$bg-dark:#333;
+$bg-light:#f4f4f4;
+$main-color: orange;
+$bg-medium: #ddd;
+$bg-cover: '../img/cover.jpg';
+//$text-light:#ddd;
+//$text-dark:#333;
+
+@function set-text-color($back-color){
+    @if(lightness($back-color)>50){
+        @return $bg-dark;
+    }@else{
+        @return $bg-light;
+    }
+}

@@ -1,0 +1,6 @@
+to install node-sass
+    npm install node-sass -D
+to write script
+    "sass":"node-sass -w scss/ -o dist/css/ --recursive"
+create index.html in dist file
+import css from dist/css to index.html
